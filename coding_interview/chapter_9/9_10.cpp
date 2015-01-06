@@ -15,6 +15,7 @@ int maxHeight(vector<Box>& boxes, vector<int>& height, int bottom) {
     return height[bottom];
   }
 
+  height[bottom] = 0; 
   for (int i = 0; i < boxes.size(); i++) {
     if (boxes[i].l > boxes[bottom].l && boxes[i].w > boxes[i].w 
         && boxes[i].h > boxes[bottom].h) {
